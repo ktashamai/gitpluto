@@ -22,8 +22,7 @@ WebDriver driver;
 	String Expectedmsg="Having fever";
 	String Actualmsg=driver.findElement(By.xpath("(//b[contains(text(),'Having fever')])[1]")).getText();
 	Assert.assertTrue(Actualmsg.contains(Expectedmsg));
-	driver.close();
-	}
+	driver.close();}
 	
 
 }
